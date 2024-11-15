@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Kahoot Hack",
+    "version": "1.0",
+    "description": "Venir premier sur tout vos kahoot",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://kahoot.it/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://kahoot.it/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
